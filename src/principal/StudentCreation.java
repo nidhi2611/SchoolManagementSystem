@@ -21,5 +21,10 @@ public class StudentCreation {
         isCreated = preparedStatement.executeUpdate() >= 1;
     }
 
-
+    public void studentCreation(boolean isCreated) {
+        if (isCreated)
+            System.out.println("STUDENT SUCCESSFULLY ENTERED");
+        else
+            System.out.println("STUDENT NOT ENTERED INTO THE DATABASE");
+    }
 }
