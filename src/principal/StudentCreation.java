@@ -21,7 +21,7 @@ public class StudentCreation {
         isCreated = preparedStatement.executeUpdate() >= 1;
     }
 
-    public void studentCreation(boolean isCreated) {
+    public void studentCreation() {
         if (isCreated)
             System.out.println("STUDENT SUCCESSFULLY ENTERED");
         else
