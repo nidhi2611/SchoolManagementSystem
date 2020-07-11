@@ -8,4 +8,9 @@ public class StudentConnection {
     private static final String password = "";
     public Connection connection = null;
 
+    public Connection getConnection() {
+        return connection;
+    }
+
+
 }
