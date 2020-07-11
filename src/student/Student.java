@@ -22,4 +22,37 @@ public class Student {
                 ", Contact_Number=" + Contact_Number +
                 '}';
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getContact_Number() {
+        return Contact_Number;
+    }
+
+    public void setContact_Number(int contact_Number) {
+        Contact_Number = contact_Number;
+    }
+
+    public int getUniversity_Roll_No() {
+        return University_Roll_No;
+    }
+
+    public void setUniversity_Roll_No(int university_Roll_No) {
+        University_Roll_No = university_Roll_No;
+    }
+
+    public String getCourse() {
+        return Course;
+    }
+
+    public void setCourse(String course) {
+        Course = course;
+    }
+
 }
