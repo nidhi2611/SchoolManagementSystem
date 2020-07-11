@@ -13,4 +13,13 @@ public class Student {
         Contact_Number = phno;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "Name='" + Name + '\'' +
+                ", University_Roll_No=" + University_Roll_No +
+                ", Course='" + Course + '\'' +
+                ", Contact_Number=" + Contact_Number +
+                '}';
+    }
 }
