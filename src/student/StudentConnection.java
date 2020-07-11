@@ -1,7 +1,5 @@
 package student;
-
-import connection.Connection;
-
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -16,8 +14,12 @@ public class StudentConnection {
     }
 
     public Connection attemptConnection() throws SQLException {
-        connection = (Connection) DriverManager.getConnection(database, username, password);
+        connection = DriverManager.getConnection(database, username, password);
         return connection;
     }
 
+    public Connection closeConnection() throws SQLException {
+        getConnection().close();
+        return getConnection();
+    }
 }
