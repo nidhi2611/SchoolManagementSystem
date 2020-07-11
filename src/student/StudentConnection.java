@@ -5,6 +5,8 @@ import java.sql.SQLException;
 
 public class StudentConnection {
     private static final String database = "jdbc:mysql://localhost:3306/studentmanagementsystem?useTimezone=true&serverTimezone=UTC";
+
+
     private static final String username = "root";
     private static final String password = "";
     public Connection connection = null;
